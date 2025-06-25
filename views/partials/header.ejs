@@ -1,0 +1,16 @@
+<header class="header">
+    <a href="/" class="header_logo">Node JS</a>
+    <nav class="header_nav">
+        <ul class="list">
+            <li><a href="/" class="<%= isActiveRoute('/', currentRoute) %>">Home</a></li>
+            <li><a href="/about" class="<%= isActiveRoute('/about', currentRoute) %>">About</a></li>
+            <li><a href="/contact" class="<%= isActiveRoute('/contact', currentRoute) %>">Contact</a></li>
+        </ul>
+    </nav>
+ <form class="form" action="/search" method="POST" role="search">
+        <input class="input" type="search" placeholder="Search Now" aria-label="Search" name="searchTerm"
+            id="searchInput" />
+        <button class="searchBtn" type="submit">Search</button>
+    </form>
+
+</header>
